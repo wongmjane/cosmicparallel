@@ -1,0 +1,33 @@
+{
+  "name": "cosmicparallel",
+  "version": "1.0.0",
+  "description": "Source code of cosmicparallel.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wongmjane/cosmicparallel.git"
+  },
+  "author": "Jane Manchun Wong <jane@wongmjane.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wongmjane/cosmicparallel/issues"
+  },
+  "homepage": "https://github.com/wongmjane",
+  "scripts": {
+    "bower-install": "bower install",
+    "firebase-deploy": "firebase deploy --project $FIREBASE_PROJECT --token $FIREBASE_TOKEN --non-interactive",
+    "polymer-serve": "polymer serve",
+    "polymer-build": "polymer build --html.collapseWhitespace",
+
+    "install": "npm run bower-install",
+    "build": "npm run polymer-build",
+    "deploy": "npm run firebase-deploy",
+
+    "start": "npm run bower-install && npm run polymer-serve"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "firebase-tools": "^3.2.0",
+    "polymer-cli": "^0.17.0"
+  },
+  "private": true
+}

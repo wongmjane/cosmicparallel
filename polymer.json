@@ -1,0 +1,13 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/cosmicparallel-app.html",
+  "fragments": [],
+  "sources": [
+    "src/**/*"
+  ],
+  "includeDependencies": [
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js",
+    "bower_components/intl/dist/Intl.min.js",
+    "manifest_pwa.json"
+  ]
+}
